@@ -59,9 +59,9 @@ classDiagram
     전사 --|> 캐릭터 : extends
     마법사 --|> 캐릭터 : extends
 
-    캐릭터 *--> 인벤토리
-    인벤토리 *--> 아이템
-    길드 o--> 캐릭터
+    캐릭터 *-- 인벤토리
+    인벤토리 *-- 아이템
+    길드 o-- 캐릭터
 
     Add_Item_UI ..> 전투 : uses
     Join_Guild_UI ..> 전투 : uses
